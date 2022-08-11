@@ -16,7 +16,7 @@ export default function Index() {
               <h2 className="font-semibold text-4xl text-blueGray-600">
                 Notus NextJS - A beautiful extension for Tailwind CSS.
               </h2>
-              <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+              <p calassName="mt-4 text-lg leading-relaxed text-blueGray-500">
                 Notus NextJS is Free and Open Source. It does not change any of
                 the CSS from{" "}
                 <a
