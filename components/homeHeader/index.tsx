@@ -14,7 +14,7 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Image from 'next/image';
 
-function Header(props) {
+function Header(props: any) {
   const { sections, title } = props;
   const size = 0.4;
 
