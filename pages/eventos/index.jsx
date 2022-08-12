@@ -51,7 +51,7 @@ export async function getServerSideProps() {
 
 
 
-const Eventos: NextPage = ({parsedData}) => {
+const Eventos = ({parsedData}) => {
   return (
     <Container maxWidth="lg">
 
