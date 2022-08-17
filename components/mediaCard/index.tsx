@@ -31,7 +31,7 @@ export default function MediaCard({title, description, imageUrl, id, date, price
 	const [startingTransaction, setStartingTransaction] = React.useState({ready:false,starting:false,error:false,id:id,price:price,title,date,transactionData:null});
 
 	const handleChange = (event: SelectChangeEvent) => {
-		setTickets(event.target.value as string);
+		setTickets(parseInt(event.target.value));
 	};
 
 	const startTransaction = () => {
