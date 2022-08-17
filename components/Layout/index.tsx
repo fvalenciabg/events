@@ -16,7 +16,7 @@ const menu = [
 const Layout = ({children} : JSX.ElementChildrenAttribute) => {
   return (
     <>
-		<Script type="text/javascript" src="https://checkout.wompi.co/widget.js"></Script>
+		<Script type="text/javascript" src="https://checkout.wompi.co/widget.js"     strategy="beforeInteractive"></Script>
 
       <HomeHeader title={"Barnaby Jones"} sections={menu} />
       {children}
