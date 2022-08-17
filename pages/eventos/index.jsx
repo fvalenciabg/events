@@ -43,6 +43,7 @@ export async function getServerSideProps() {
 			price:item.fields["Valor preventa"],
 			flyer:item.fields["Flyer"] || null,
 			available:item.fields["Entradas disponibles"],
+			desc:item.fields["Descripción"] || "",
 		})
 	});
 	// Pass data to the page via props

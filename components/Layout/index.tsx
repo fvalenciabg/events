@@ -1,5 +1,7 @@
 import HomeHeader from "../homeHeader";
 import Footer from "../footer";
+import Script from 'next/script'
+
 
 const menu = [
 	{
@@ -14,6 +16,8 @@ const menu = [
 const Layout = ({children} : JSX.ElementChildrenAttribute) => {
   return (
     <>
+		<Script type="text/javascript" src="https://checkout.wompi.co/widget.js"></Script>
+
       <HomeHeader title={"Barnaby Jones"} sections={menu} />
       {children}
       <Footer />

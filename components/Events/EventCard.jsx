@@ -9,7 +9,6 @@ import MediaCard from "../../components/mediaCard";
 
 export default function EventCard({data}) {
 	let url;
-	console.log(data);
 	if(data.flyer){
 		 url = data.flyer[0].url
 	}else{
@@ -18,10 +17,11 @@ export default function EventCard({data}) {
   return (
     <Grid item xs={12} sm={6} l={4} xl={4}>
             <MediaCard
+              description={data.desc}
               title={data.name}
-              description={
-              data.date
-              }
+			  price={data.price}
+			  id={data.id}
+			  date={data.date}
               imageUrl={url}
             />
           </Grid>

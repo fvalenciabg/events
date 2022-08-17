@@ -4,16 +4,17 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
+import Masonry from '@mui/lab/Masonry';
+
 export default function EventGroup({events}) {
-	console.log(events)
 	let eventList = events.map(event=>{
 		return <EventCard key={event.id} data={event}></EventCard>
 
 	})
-	console.log(eventList);
+
   return (
-    <>
-		<Grid container spacing={2} sm={12}>{eventList}</Grid>
-    </>
+    <Box>
+		<Masonry  columns={{ xs: 1, sm: 2, lg:3, xl:3, xxl:3 }} spacing={2}>{eventList}</Masonry>
+    </Box>
   );
 }
